@@ -1,4 +1,6 @@
 @use './partials/utilities.scss';
+@use './partials/layout.scss';
+
 
 *{
   font-family: "Poppins", sans-serif;
@@ -29,4 +31,7 @@ ul,ol,menu{
   list-style: none;
 }
 
+img{
+  max-width: 100%;
+}
 

@@ -1,13 +1,17 @@
 <template>
     <div class="container">
-        HOME
+        <AppHero></AppHero>
     </div>
 </template>
 
 <script>
-    export default {
-        
+import AppHero from '../components/AppHero.vue'
+
+export default {
+    components: {
+        AppHero,
     }
+}
 </script>
 
 <style lang="scss" scoped>

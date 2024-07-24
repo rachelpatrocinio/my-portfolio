@@ -53,6 +53,7 @@ ul{
         color: var(--main-dark-color);
         font-weight: 500;
         transform: scale(1.1);
+        transition: all 0.5s;
       }
     }
   }

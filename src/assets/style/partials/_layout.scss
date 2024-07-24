@@ -1,0 +1,12 @@
+.btn-main{
+    background-color: var(--main-dark-color);
+    color: white;
+
+    &:hover{
+        background-color: var(--dark-color);
+    }
+}
+
+.router{
+    color: currentColor;
+}
