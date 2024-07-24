@@ -21,10 +21,13 @@ export default {
           <RouterLink to="/">Home</RouterLink>
         </li>
         <li class="col">
+          <RouterLink to="/sudime">Su di me</RouterLink>
+        </li>
+        <li class="col">
           <RouterLink to="/esperienze">Esperienze</RouterLink>
         </li>
         <li class="col">
-          <RouterLink to="/progetti">I miei Progetti</RouterLink>
+          <RouterLink to="/progetti">Progetti</RouterLink>
         </li>
         <li class="col">
           <RouterLink to="/formazione">Formazione</RouterLink>
