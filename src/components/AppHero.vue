@@ -32,14 +32,7 @@ h1{
 }
 
 img.name{
-    margin-top: 120px;
-}
-
-img.rachel{
-    &:hover{
-        transform: scale(1.1);
-        transition: all 1s;
-    }
+    margin-top: 100px;
 }
 
 .btn-main{

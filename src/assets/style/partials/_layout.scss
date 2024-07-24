@@ -1,3 +1,4 @@
+@use './utilities.scss';
 .btn-main{
     background-color: var(--main-dark-color);
     color: white;
@@ -9,4 +10,12 @@
 
 .router{
     color: currentColor;
+}
+
+.dark-bg{
+    background-color: var(--dark-color);
+}
+
+.main-bg{
+    background-color: var(--main-color);
 }
