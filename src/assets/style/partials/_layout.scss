@@ -10,6 +10,7 @@
 
 .router{
     color: currentColor;
+    text-decoration: none;
 }
 
 .dark-bg{
@@ -19,3 +20,39 @@
 .main-bg{
     background-color: var(--main-color);
 }
+
+// BADGES TECNOLOGIE
+
+.HTML{
+    background-color: #9D3F66
+}
+
+.CSS,
+.SCSS{
+    background-color: #B46673
+}
+
+.BOOTSTRAP{
+    background-color: #C38994
+}
+
+.JS{
+    background-color: #CFA3A6
+}
+
+.VUE{
+    background-color: #E4ABAB;
+}
+
+.MYSQL{
+    background-color: #E4B6B8;
+}
+
+.PHP{
+    background-color: #E0BEB3;
+}
+
+.LARAVEL{
+    background-color: #EED0CC;
+}
+ 

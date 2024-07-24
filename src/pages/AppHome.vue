@@ -18,30 +18,18 @@
             <div class="container">
                 <h1 class="mb-3">I miei progetti</h1>
                 <div class="row">
-                    <div class="col-4">
-                        <AppCard></AppCard>
+                    <div class="col-4" v-for="progetto in store.progetti" :key="progetto.id">
+                        <AppCard :progetto="progetto"></AppCard>
                     </div>
-                    <div class="col-4">
-                        <AppCard></AppCard>
-                    </div>
-                    <div class="col-4">
-                        <AppCard></AppCard>
-                    </div>
-                    <div class="col-4">
-                        <AppCard></AppCard>
-                    </div>
-                    <div class="col-4">
-                        <AppCard></AppCard>
-                    </div>
-                    <div class="col-4">
-                        <AppCard></AppCard>
+                    <div class="col-12 text-white">
+                        <p class="more">. . .</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
     <div class="main-bg py-5">
-        <section class="formazione">
+        <section class="formazione py-5">
             <div class="container">
                 <h1 class="mb-3">Formazione</h1>
                 <div class="row mb-5 justify-content-center">
@@ -76,20 +64,38 @@
 <script>
 import AppHero from '../components/AppHero.vue'
 import AppCard from '../components/AppCard.vue'
+import { store } from "../store.js";
+
 
 
 export default {
     components: {
         AppHero,
         AppCard
+    },
+    data(){
+        return{
+            store
+        }
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/partials/layout';
+
 .progetti{
     h1{
         color: var(--main-color);
+    }
+
+    .more{
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--main-dark-color);
+        }
     }
 }
 
