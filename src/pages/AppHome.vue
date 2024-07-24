@@ -44,7 +44,7 @@
         <section class="formazione">
             <div class="container">
                 <h1 class="mb-3">Formazione</h1>
-                <div class="row mb-5">
+                <div class="row mb-5 justify-content-center">
                     <div class="col-8">
                         <h2>BOOLEAN</h2>
                         <h4>Master Full Stack Web Development </h4>
@@ -52,11 +52,11 @@
                         <p>Percorso intensivo di 700 ore durante le quali ho partecipato a lezioni teoriche e pratiche apprendendo le basi della programmazione frontend e backend con l’utilizzo dei principali strumenti di sviluppo.</p>
                         <a href="https://boolean.careers/">Sito Boolean</a>
                     </div>
-                    <div class="col-4 text-center">
+                    <div class="col-4 text-end">
                         <img class="logo" src="../images/boolean.png" alt="">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-8">
                         <h2>LABFORTRAINING - LABFORWEB</h2>
                         <h4>Front End Development </h4>
@@ -64,7 +64,7 @@
                         <p>Corso specializzato in HTML, CSS, GRAFICA WEB e UI/UX DESIGN, JAVASCRIPT, JQUERY, BOOTSTRAP, AJAX, RESPONSIVE WEB DESIGN e SASS di 190 ore totali.</p>
                         <a href="https://boolean.careers/">Sito Labfortaining</a>
                     </div>
-                    <div class="col-4 text-center">
+                    <div class="col-4 text-end">
                         <img class="logo" src="../images/labforweb.png" alt="">
                     </div>
                 </div>
@@ -87,7 +87,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .progetti{
     h1{
         color: var(--main-color);
@@ -95,6 +94,11 @@ export default {
 }
 
 .formazione{
+
+    .container{
+        width: 70%;
+    }
+
     h2{
         color: var(--main-dark-color);
     }

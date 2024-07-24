@@ -32,10 +32,11 @@ h1{
 }
 
 img.name{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .btn-main{
     width: 30%;
+    transition: all 0.8s;
 }
 </style>
