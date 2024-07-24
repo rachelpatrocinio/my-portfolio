@@ -1,4 +1,10 @@
-/* @use './partials/exmaple.scss'; */
+@use './partials/utilities.scss';
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
 #app {
   height: 100vh;
@@ -6,8 +12,21 @@
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--main-color);
 }
 
 main {
   flex-grow: 1;
 }
+ 
+// RESET
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,ol,menu{
+  list-style: none;
+}
+
+
