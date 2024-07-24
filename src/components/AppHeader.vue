@@ -18,19 +18,19 @@ export default {
     <nav class="col-8">
       <ul class="d-flex m-0 p-0">
         <li class="col">
-          <a href="">Home</a>
+          <RouterLink to="/">Home</RouterLink>
         </li>
         <li class="col">
-          <a href="">Esperienze</a>
+          <RouterLink to="/esperienze">Esperienze</RouterLink>
         </li>
         <li class="col">
-          <a href="">I miei Progetti</a>
+          <RouterLink to="/progetti">I miei Progetti</RouterLink>
         </li>
         <li class="col">
-          <a href="">Formazione</a>
+          <RouterLink to="/formazione">Formazione</RouterLink>
         </li>
         <li class="col">
-          <a href="">Contatti</a>
+          <RouterLink to="/contatti">Contatti</RouterLink>
         </li>
       </ul>
     </nav>
