@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-
+import './assets/style/general.scss'
 import App from './App.vue'
 
 /* import the fontawesome core */
