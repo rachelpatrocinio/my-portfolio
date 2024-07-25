@@ -337,10 +337,9 @@ img.logo{
             flex-direction: column-reverse;
         }
     }
-}
 
- 
-.certificato{
+     
+    .certificato{
         width: 100%;
         position: fixed;
         top: 0;
@@ -363,4 +362,5 @@ img.logo{
             }
         }
     }
+}
 </style>
