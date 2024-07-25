@@ -43,6 +43,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+header{
+  position: fixed;
+  width: 100%;
+  background-color: var(--main-color);
+  z-index: 99;
+}
+
 ul{
   li{
     text-align: center;
