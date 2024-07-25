@@ -13,10 +13,10 @@ export default {
 
 <template>
 
-<header class="py-4">
+<header class="header py-4">
   <div class="container d-flex justify-content-center">
     <nav class="col-8">
-      <ul class="d-flex m-0 p-0">
+      <ul class="menu d-md-flex m-0 p-0">
         <li class="col">
           <RouterLink to="/">Home</RouterLink>
         </li>
@@ -38,14 +38,19 @@ export default {
       </ul>
     </nav>
   </div>
+  <div class="text-end me-3">
+    <font-awesome-icon :icon="['fas', 'bars']" class="hamburger d-md-none"/>
+  </div>  
 </header>
 
 </template>
 
 <style lang="scss" scoped>
-header{
+.header{
   position: fixed;
-  width: 100%;
+  top:0;
+  left: 0;
+  right:0;
   background-color: var(--main-color);
   z-index: 99;
 }
@@ -65,6 +70,15 @@ ul{
         transform: scale(1.1);
         transition: all 0.5s;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .header{
+
+    nav{
+      display: none;
     }
   }
 }

@@ -2,12 +2,12 @@
 <section class="hero pt-5">
     <div class="container pt-4">
         <div class="row">
-            <div class="col-4 text-center">
+            <div class="col-12 col-md-4 text-center">
                 <img class="rachel" src="../images/rachel.jpg" alt="Foto Rachel">
             </div>
-            <div class="col-8 p-5 text-center">
+            <div class="col-12 col-md-8 px-4 p-md-5 text-center">
                 <img class="name" src="../images/name.png" alt="">
-                <h1 class="mt-4">FULL STACK WEB DEVELOPER</h1>
+                <h1 class="mb-0 mt-4">FULL STACK WEB DEVELOPER</h1>
             </div>
         </div>
     </div>  
@@ -30,5 +30,17 @@ h1{
 
 img.name{
     margin-top: 90px;
+}
+
+@media screen and (max-width: 689px){
+    .hero{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+   
+    img.name{
+        margin-top: 20px;
+    }
 }
 </style>

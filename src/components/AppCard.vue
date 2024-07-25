@@ -37,7 +37,7 @@ img{
     
     &:hover{
         transform: scale(1.01);
-        transition: all 0.8s;
+        transition: all 0.6s;
     }
 }
 
