@@ -5,6 +5,16 @@ export default {
   },
   data() {
     return {
+      dropdown: false
+    }
+  },
+  methods:{
+    toggleDropdown(){
+      if(this.dropdown === false){
+        this.dropdown = true
+      }else{
+        this.dropdown = false
+      }
     }
   }
 }
@@ -39,8 +49,30 @@ export default {
     </nav>
   </div>
   <div class="text-end me-3">
-    <font-awesome-icon :icon="['fas', 'bars']" class="hamburger d-md-none"/>
-  </div>  
+    <font-awesome-icon :icon="['fas', 'bars']" class="hamburger d-md-none" @click="toggleDropdown"/>
+  </div>
+  <div class="dropdown" v-if="dropdown === true">
+    <ul class="menu m-0 p-0">
+        <li class="col">
+          <RouterLink to="/" @click="dropdown = false">Home</RouterLink>
+        </li>
+        <li class="col">
+          <RouterLink to="/sudime" @click="dropdown = false">Su di me</RouterLink>
+        </li>
+        <li class="col">
+          <RouterLink to="/esperienze" @click="dropdown = false">Esperienze</RouterLink>
+        </li>
+        <li class="col">
+          <RouterLink to="/progetti" @click="dropdown = false">Progetti</RouterLink>
+        </li>
+        <li class="col">
+          <RouterLink to="/formazione" @click="dropdown = false">Formazione</RouterLink>
+        </li>
+        <li class="col">
+          <RouterLink to="/contatti" @click="dropdown = false">Contatti</RouterLink>
+        </li>
+      </ul>
+  </div>
 </header>
 
 </template>
