@@ -8,9 +8,6 @@
             <div class="col-8 p-5 text-center">
                 <img class="name" src="../images/name.png" alt="">
                 <h1 class="mt-4">FULL STACK WEB DEVELOPER</h1>
-                <button class="btn btn-main p-2 mt-4 grow">
-                    <RouterLink class="router text-decoration-none" to="/contatti">CONTATTAMI !</RouterLink>
-                </button>
             </div>
         </div>
     </div>  
@@ -33,10 +30,5 @@ h1{
 
 img.name{
     margin-top: 90px;
-}
-
-.btn-main{
-    width: 30%;
-    transition: all 0.8s;
 }
 </style>

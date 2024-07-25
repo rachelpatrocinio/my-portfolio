@@ -33,6 +33,8 @@ img{
 }
 
 .card{
+    box-shadow: 0 8px 8px -4px var(--main-dark-color);
+    
     &:hover{
         transform: scale(1.01);
         transition: all 0.8s;
