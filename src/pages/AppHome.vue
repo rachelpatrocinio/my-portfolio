@@ -32,19 +32,7 @@
             </div>
         </section>
         <AppCompetenze></AppCompetenze>
-        <section class="progetti">
-            <div class="container">
-                <h1 class="mb-3 mb-md-5">I miei progetti</h1>
-                <div class="row m-1 m-md-0">
-                    <div class="col-12 col-md-4" v-for="progetto in store.progetti" :key="progetto.id">
-                        <AppCard :progetto="progetto"></AppCard>
-                    </div>
-                    <div class="col-12 text-white">
-                        <p class="more">. . .</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <AppProgetti></AppProgetti>
     </div>
     <div class="main-bg py-5">
         <section class="formazione py-5 main-bg">
@@ -153,8 +141,8 @@
 
 <script>
 import AppHero from '../components/AppHero.vue'
-import AppCard from '../components/AppCard.vue'
 import AppCompetenze from '../components/AppCompetenze.vue'
+import AppProgetti from '../components/AppProgetti.vue'
 
 import { store } from "../store.js";
 
@@ -164,7 +152,8 @@ export default {
     components: {
         AppHero,
         AppCard,
-        AppCompetenze
+        AppCompetenze,
+        AppProgetti
     },
     data(){
         return{
@@ -213,21 +202,6 @@ export default {
 
         &:hover{
             color: var(--main-color);
-        }
-    }
-}
-
-.progetti{
-    h1{
-        color: var(--main-color);
-    }
-
-    .more{
-        font-size: 20px;
-        cursor: pointer;
-
-        &:hover{
-            color: var(--main-dark-color);
         }
     }
 }
