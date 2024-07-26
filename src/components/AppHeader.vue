@@ -1,11 +1,11 @@
 <script>
+import { store } from "../store.js";
 
 export default {
-  components: {
-  },
   data() {
     return {
-      dropdown: false
+      dropdown: false,
+      store
     }
   },
   methods:{
@@ -28,19 +28,19 @@ export default {
     <nav class="col-8">
       <ul class="menu d-md-flex m-0 p-0">
         <li class="col">
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink @click="store.windowScroll()" to="/">Home</RouterLink>
         </li>
         <li class="col">
-          <RouterLink to="/sudime">Su di me</RouterLink>
+          <RouterLink @click="store.windowScroll()" to="/sudime">Su di me</RouterLink>
         </li>
         <li class="col">
-          <RouterLink to="/esperienze">Esperienze</RouterLink>
+          <RouterLink @click="store.windowScroll()" to="/esperienze">Esperienze</RouterLink>
         </li>
         <li class="col">
-          <RouterLink to="/progetti">Progetti</RouterLink>
+          <RouterLink @click="store.windowScroll()" to="/progetti">Progetti</RouterLink>
         </li>
         <li class="col">
-          <RouterLink to="/contatti">Contatti</RouterLink>
+          <RouterLink @click="store.windowScroll()" to="/contatti">Contatti</RouterLink>
         </li>
       </ul>
     </nav>
@@ -50,22 +50,22 @@ export default {
   </div>
   <div class="dropdown" v-if="dropdown === true">
     <ul class="menu m-0 p-0">
-        <li class="col">
+        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/" @click="dropdown = false">Home</RouterLink>
         </li>
-        <li class="col">
+        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/sudime" @click="dropdown = false">Su di me</RouterLink>
         </li>
-        <li class="col">
+        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/esperienze" @click="dropdown = false">Esperienze</RouterLink>
         </li>
-        <li class="col">
+        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/progetti" @click="dropdown = false">Progetti</RouterLink>
         </li>
-        <li class="col">
+        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/formazione" @click="dropdown = false">Formazione</RouterLink>
         </li>
-        <li class="col">
+        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/contatti" @click="dropdown = false">Contatti</RouterLink>
         </li>
       </ul>

@@ -1,9 +1,9 @@
 <template>
-     <div class="container py-5">
-        <div class="row py-5">
-            ESPERIENZE
-        </div>
+<div class="container py-5">
+    <div class="row py-5">
+        <h1 class="my-4">Esperienze</h1>
     </div>
+</div>>
 </template>
 
 <script>
@@ -13,5 +13,8 @@
 </script>
 
 <style lang="scss" scoped>
+.container{
+    width: 80%;
+}
 
 </style>
