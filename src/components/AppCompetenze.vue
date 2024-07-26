@@ -2,7 +2,7 @@
 <section class="competenze pb-md-5 mb-5">
     <div class="container">
         <h1 class="mb-2 mb-md-5">Competenze</h1>
-        <div class="row justify-content-center align-items-center py-2">
+        <div class="row justify-content-center align-items-center pb-5">
             <div class="col-2 col-md mb-3 m-md-0"><img src="../images/competenze/html-5.png" alt="HTML"></div>
             <div class="col-2 col-md mb-3 m-md-0"><img src="../images/competenze/css-3.png" alt="CSS"></div>
             <div class="col-2 col-md mb-3 m-md-0"><img src="../images/competenze/sass.png" alt="SCSS"></div>

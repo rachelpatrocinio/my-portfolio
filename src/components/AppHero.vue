@@ -1,6 +1,6 @@
 <template>
 <section class="hero pt-5">
-    <div class="container pt-4">
+    <div class="container pt-2">
         <div class="row">
             <div class="col-12 col-md-4 text-center">
                 <img class="rachel" src="../images/rachel.jpg" alt="Foto Rachel">

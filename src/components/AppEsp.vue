@@ -1,7 +1,7 @@
 <template>
 <section class="esperienze py-5">
     <div class="container p-5 rounded">
-        <div class="row">
+        <div class="row p-2">
             <h1 class="mb-4">Esperienze</h1>
             <div class="col-12 mb-4">
                 <h2>BOOLEAN</h2>

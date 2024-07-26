@@ -13,7 +13,7 @@
 </div>
 <div v-if="modalProgetto === true" class="modal-progetto">
     <div class="container position-relative">
-        <div class="row p-5">
+        <div class="row p-5 rounded">
             <h2>{{progetto.nome}}</h2>
         </div>
         <font-awesome-icon :icon="['far', 'circle-xmark']" class="close position-absolute" @click="modalProgetto = false" />
@@ -43,6 +43,7 @@ img{
 
 .card{
     box-shadow: 0 8px 8px -4px var(--main-dark-color);
+    cursor: pointer;
     
     &:hover{
         transform: scale(1.01);
