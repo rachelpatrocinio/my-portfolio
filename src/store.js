@@ -4,6 +4,9 @@ export const store = reactive({
   cartItems: 0,
   booleanCert: false,
   labCert: false,
+  windowScroll(){
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  },
   toggleBooleanCert(){
     if(this.booleanCert === false){
         this.booleanCert = true
@@ -23,6 +26,17 @@ export const store = reactive({
       this.labCert = false
   },
   progetti: [
+    {
+      nome: 'Portfolio',
+      descrizione: '...',
+      foto: 'portfolio.jpg',
+      tecnologie: ['HTML', 'SCSS', 'BOOTSTRAP', 'JS', 'VUE'],
+      github: [
+        {
+          link: 'https://github.com/rachelpatrocinio/my-portfolio', 
+        }
+      ]
+    },
     {
       nome: 'Deliveboo',
       descrizione: '...',
@@ -100,5 +114,6 @@ export const store = reactive({
         }
       ]
     },
-  ]
+  ],
+  progettiHome: []
 })

@@ -6,7 +6,7 @@
                 <div class="row contatti justify-content-end align-items-center">
                     <div class="col-12 col-md-4 text-center">
                         <button class="btn btn-main p-2 mt-2 mt-md-0 grow">
-                            <RouterLink class="router" to="/contatti">📞 CONTATTAMI 📩</RouterLink>
+                            <RouterLink @click="store.windowScroll()" class="router" to="/contatti">📞 CONTATTAMI 📩</RouterLink>
                         </button>
                         <div class="socials mt-3">
                             <a class="d-flex justify-content-center align-items-center gap-2 social" target="_blank" href="https://www.linkedin.com/in/rachel-anne-patrocinio-80811b315/">
@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-10 col-md-8 main-dark-bg rounded p-3 p-md-5">
                         <p class="m-0">
-                            👋 Ciao! Benvenut* nel mio Sito Portfolio! Sono Rachel ! Ho 26 anni e sono di 📍 Roma! <br><br>
+                            👋 Ciao! Benvenuti nel mio Sito Portfolio! Sono Rachel ! Ho 26 anni e sono di 📍 Roma! <br><br>
                             🙋‍♀️ Attualmente sono alla ricerca di un lavoro che mi sappia stimolare e mi aiuti ad arricchire il mio bagaglio da Full Stack Web Developer! <br><br>
                             📈 Sono, quindi, disponibile a tutto! Mi metto in gioco e ho sempre voglia di imparare nuove skills! <br><br>
                             🔆 Se siete interessati ad avere in azienda una persona solare, dinamica, precisa e determinata, sono la persona adatta a voi! 🤗 <br><br>
@@ -29,14 +29,14 @@
                         </p>
                         <p class="mb-0 mt-3">
                             <span class="text-dark">➡ </span>
-                            <RouterLink to="/sudime" class="router text-decoration-underline">Scopri di più su di me!</RouterLink>
+                            <RouterLink @click="store.windowScroll()" to="/sudime" class="router text-decoration-underline">Scopri di più su di me!</RouterLink>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <AppCompetenze></AppCompetenze>
-        <AppProg></AppProg>
+        <AppProgetto></AppProgetto>
     </div>
     <div class="main-bg py-5">
         <AppFormazione></AppFormazione>
@@ -47,7 +47,7 @@
 <script>
 import AppHero from '../components/AppHero.vue'
 import AppCompetenze from '../components/AppCompetenze.vue'
-import AppProg from '../components/AppProg.vue'
+import AppProgetto from '../components/AppProgetto.vue'
 import AppFormazione from '../components/AppFormazione.vue'
 import AppEsp from '../components/AppEsp.vue'
 
@@ -58,7 +58,7 @@ export default {
     components: {
         AppHero,
         AppCompetenze,
-        AppProg,
+        AppProgetto,
         AppFormazione,
         AppEsp
     },
