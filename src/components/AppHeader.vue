@@ -91,6 +91,7 @@ ul{
   li{
     text-align: center;
     padding: 10px;
+
     a{
       color: currentColor;
       text-decoration: none;
@@ -102,11 +103,18 @@ ul{
         transform: scale(1.1);
         transition: all 0.5s;
       }
+
+      &:focus{
+        color: var(--main-dark-color);
+        font-weight: 500;
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
     }
   }
 }
 
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 789px) {
   .header{
 
     nav{

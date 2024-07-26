@@ -1,6 +1,8 @@
 <template>
-    <div class="container">
-        CONTATTI
+    <div class="container py-5">
+        <div class="row py-5">
+            CONTATTI
+        </div>
     </div>
 </template>
 

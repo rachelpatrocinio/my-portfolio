@@ -32,20 +32,20 @@
             </div>
         </section>
         <AppCompetenze></AppCompetenze>
-        <AppProgetti></AppProgetti>
+        <AppProg></AppProg>
     </div>
     <div class="main-bg py-5">
         <AppForm></AppForm>
-        <AppEsperienze></AppEsperienze>
+        <AppEsp></AppEsp>
     </div>
 </template>
 
 <script>
 import AppHero from '../components/AppHero.vue'
 import AppCompetenze from '../components/AppCompetenze.vue'
-import AppProgetti from '../components/AppProgetti.vue'
+import AppProg from '../components/AppProg.vue'
 import AppForm from '../components/AppForm.vue'
-import AppEsperienze from '../components/AppEsperienze.vue'
+import AppEsp from '../components/AppEsp.vue'
 
 
 import { store } from "../store.js";
@@ -54,9 +54,9 @@ export default {
     components: {
         AppHero,
         AppCompetenze,
-        AppProgetti,
+        AppProg,
         AppForm,
-        AppEsperienze
+        AppEsp
     },
     data(){
         return{

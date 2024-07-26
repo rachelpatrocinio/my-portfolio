@@ -7,7 +7,7 @@
             </div>
             <div class="col-12 col-md-8 px-4 p-md-5 text-center">
                 <img class="name" src="../images/name.png" alt="">
-                <h1 class="mb-0 mt-4">FULL STACK WEB DEVELOPER</h1>
+                <h1 class="mb-0 mt-4">JR FULL STACK WEB DEVELOPER</h1>
             </div>
         </div>
     </div>  

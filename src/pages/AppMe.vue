@@ -1,6 +1,8 @@
 <template>
-    <div class="container">
-        ME
+    <div class="container py-5">
+        <div class="row py-5">
+            ME
+        </div>
     </div>
 </template>
 

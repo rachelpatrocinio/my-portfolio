@@ -1,6 +1,8 @@
 <template>
-    <div class="container">
-        ESPERIENZE
+     <div class="container py-5">
+        <div class="row py-5">
+            ESPERIENZE
+        </div>
     </div>
 </template>
 
