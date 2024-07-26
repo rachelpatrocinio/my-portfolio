@@ -1,12 +1,12 @@
 <template>
     <AppHero></AppHero>
-    <div class="dark-bg py-5">
+    <div class="dark-bg pt-5">
         <section class="me">
             <div class="container">
                 <div class="row contatti justify-content-end align-items-center">
                     <div class="col-12 col-md-4 text-center">
                         <button class="btn btn-main p-2 mt-2 mt-md-0 grow">
-                            <RouterLink class="router text-decoration-none" to="/contatti">📞 CONTATTAMI 📩</RouterLink>
+                            <RouterLink class="router" to="/contatti">📞 CONTATTAMI 📩</RouterLink>
                         </button>
                         <div class="socials mt-3">
                             <a class="d-flex justify-content-center align-items-center gap-2 social" target="_blank" href="https://www.linkedin.com/in/rachel-anne-patrocinio-80811b315/">
@@ -25,7 +25,11 @@
                             🙋‍♀️ Attualmente sono alla ricerca di un lavoro che mi sappia stimolare e mi aiuti ad arricchire il mio bagaglio da Full Stack Web Developer! <br><br>
                             📈 Sono, quindi, disponibile a tutto! Mi metto in gioco e ho sempre voglia di imparare nuove skills! <br><br>
                             🔆 Se siete interessati ad avere in azienda una persona solare, dinamica, precisa e determinata, sono la persona adatta a voi! 🤗 <br><br>
-                            Non esitate a contattarmi! Che non vedo l'ora di iniziare il mio percorso lavorativo come Web Developer! 🚀
+                            Non esitate a contattarmi! Che non vedo l'ora di mettere in pratica le mie competenze e a costruire una carriera in questo campo! 🚀
+                        </p>
+                        <p class="mb-0 mt-3">
+                            <span class="text-dark">➡ </span>
+                            <RouterLink to="/sudime" class="router text-decoration-underline">Scopri di più su di me!</RouterLink>
                         </p>
                     </div>
                 </div>
@@ -73,7 +77,7 @@ export default {
 
     .col-md-4{
         position: relative;
-        bottom: 190px;
+        bottom: 200px;
     }
 
     .col-md-8{
@@ -196,6 +200,14 @@ export default {
             img{
                 height: 400px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .me{
+        .container{
+            height: 300px;
         }
     }
 }
