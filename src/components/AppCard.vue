@@ -1,7 +1,7 @@
 <template>
  <div class="card p-4 mb-4" @click="modalProgetto = true">
     <h3 class="text-center">{{progetto.nome}}</h3>
-    <img :src="imgPath + progetto.foto" alt="Anteprima">
+    <img class="card-img" :src="imgPath + progetto.foto" alt="Anteprima">
     <ul class="d-flex flex-wrap justify-content-center  gap-2 p-0 mt-3">
         <li v-for="tecnica in progetto.tecnologie">
             <p class="p-2 m-0 rounded" :class="tecnica">{{ tecnica }}</p>
@@ -15,6 +15,7 @@
     <div class="container position-relative">
         <div class="row p-5 rounded">
             <h2>{{progetto.nome}}</h2>
+            <img :src="imgPath + progetto.foto" alt="Anteprima">
         </div>
         <font-awesome-icon :icon="['far', 'circle-xmark']" class="close position-absolute" @click="modalProgetto = false" />
     </div>
@@ -36,11 +37,6 @@
 </script>
 
 <style lang="scss" scoped>
-img{
-    height: 200px;
-    object-fit: cover;
-}
-
 .card{
     box-shadow: 0 8px 8px -4px var(--main-dark-color);
     cursor: pointer;
@@ -48,6 +44,11 @@ img{
     &:hover{
         transform: scale(1.01);
         transition: all 0.6s;
+    }
+
+    .card-img{
+        height: 200px;
+        object-fit: cover;
     }
 }
 
@@ -89,8 +90,13 @@ ul{
         .row{
             background-color: white;
             color: var(--dark-color);
-            height: 600px;
+            height: 700px;
             overflow: auto;
+
+            img{
+                height: 500px;
+                object-fit: contain;
+            }
         }
 
         .close{

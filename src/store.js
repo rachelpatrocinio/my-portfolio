@@ -26,7 +26,7 @@ export const store = reactive({
     {
       nome: 'Deliveboo',
       descrizione: '...',
-      foto: 'Deliveboo-1.jpg',
+      foto: 'deliveboo.jpg',
       imgProgetto: [
         'deliveboo1.png',        
         'deliveboo2.png',
@@ -48,11 +48,44 @@ export const store = reactive({
     {
       nome: 'Game Creator',
       descrizione: '...',
-      foto: 'Game-creator.jpg',
+      foto: 'game.jpg',
       tecnologie: ['HTML', 'SCSS', 'BOOTSTRAP', 'MYSQL', 'PHP', 'LARAVEL'],
       github: [
         {
           link:'https://github.com/rachelpatrocinio/game-creator'
+        }
+      ]
+    },
+    {
+      nome: 'Dc Comics',
+      descrizione: '...',
+      foto: 'dc.jpg',
+      tecnologie: ['HTML', 'SCSS','BOOTSTRAP','PHP', 'LARAVEL'],
+      github: [
+        {
+          link: 'https://github.com/rachelpatrocinio/laravel-comics'
+        }
+      ]
+    },
+    {
+      nome: 'iAcademy',
+      descrizione: '...',
+      foto: 'iacademy.jpg',
+      tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
+      github: [
+        {
+          link: 'https://github.com/rachelpatrocinio/proj-html-vuejs'
+        }
+      ]
+    },
+    {
+      nome: 'Boolflix',
+      descrizione: '...',
+      foto: 'boolflix.jpg',
+      tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
+      github: [
+        {
+          link: 'https://github.com/rachelpatrocinio/vite-boolflix'
         }
       ]
     },
@@ -67,6 +100,5 @@ export const store = reactive({
         }
       ]
     },
-   
   ]
 })

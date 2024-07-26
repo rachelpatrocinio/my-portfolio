@@ -1,13 +1,13 @@
 <template>
-<section class="progetti">
+<section class="progetti py-5">
     <div class="container">
-        <h1 class="mb-3 mb-md-5">I miei progetti</h1>
+        <h1 class="mb-3 mb-md-5">I miei progetti in Boolean</h1>
         <div class="row m-1 m-md-0">
             <div class="col-12 col-md-4" v-for="progetto in store.progetti" :key="progetto.id">
                 <AppCard :progetto="progetto"></AppCard>
             </div>
             <div class="col-12 text-white">
-                <p class="more">. . .</p>
+                <RouterLink to="/progetti" class="router more">. . .</RouterLink>
             </div>
         </div>
     </div>
