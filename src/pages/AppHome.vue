@@ -74,13 +74,13 @@
                         <p>Percorso intensivo di 700 ore durante le quali ho partecipato a lezioni teoriche e pratiche apprendendo le basi della programmazione frontend e backend con l’utilizzo dei principali strumenti di sviluppo.</p>
                         <a href="https://boolean.careers/" target="_blank">Sito Boolean</a>
                         <div class="mt-2">
-                            <button type="button" class="btn btn-primary" @click="toggleBooleanCert">
+                            <button type="button" class="btn btn-primary" @click="store.toggleBooleanCert()">
                                 🗂 Certificato 
                             </button>
-                            <div class="certificato" v-if="booleanCert === true">
+                            <div class="certificato" v-if="store.booleanCert === true">
                                 <div class="certificato-img rounded p-5">
                                     <img src="../images/certificati/boolean.jpeg" alt="">
-                                    <font-awesome-icon :icon="['far', 'circle-xmark']" class="close" @click="closeCert" />
+                                    <font-awesome-icon :icon="['far', 'circle-xmark']" class="close" @click="store.closeCert()" />
                                 </div>
                             </div>
                         </div>
@@ -97,13 +97,13 @@
                         <p>Corso specializzato in HTML, CSS, GRAFICA WEB e UI/UX DESIGN, JAVASCRIPT, JQUERY, BOOTSTRAP, AJAX, RESPONSIVE WEB DESIGN e SASS di 190 ore totali.</p>
                         <a href="https://www.labfortraining.it/" target="_blank">Sito Labfortaining</a>
                         <div class="mt-2">
-                            <button type="button" class="btn btn-primary" @click="toggleLabCert">
+                            <button type="button" class="btn btn-primary" @click="store.toggleLabCert()">
                                 🗂 Certificato 
                             </button>
-                            <div class="certificato" v-if="labCert === true">
+                            <div class="certificato" v-if="store.labCert === true">
                                 <div class="certificato-img rounded p-5">
                                     <img src="../images/certificati/lab.jpg" alt="">
-                                    <font-awesome-icon :icon="['far', 'circle-xmark']" class="close" @click="closeCert" />
+                                    <font-awesome-icon :icon="['far', 'circle-xmark']" class="close" @click="store.closeCert()" />
                                 </div>
                             </div>
                         </div>
@@ -131,29 +131,7 @@ export default {
     },
     data(){
         return{
-            store,
-            booleanCert: false,
-            labCert: false
-        }
-    },
-    methods:{
-        toggleBooleanCert(){
-            if(this.booleanCert === false){
-                this.booleanCert = true
-            }else{
-                this.booleanCert = false
-            }
-        },
-        toggleLabCert(){
-            if(this.labCert === false){
-                this.labCert = true
-            }else{
-                this.labCert = false
-            }
-        },
-        closeCert(){
-            this.booleanCert = false
-            this.labCert = false
+            store
         }
     }
 }
@@ -249,6 +227,8 @@ export default {
         width: 200px;
         aspect-ratio: 1/1;
         object-fit: cover;
+        border-radius: 100%;
+        box-shadow: 0 8px 8px -4px var(--dark-color);
     }
 }
 
@@ -263,11 +243,6 @@ export default {
             }       
         }     
     }
-}
-
-img.logo{
-    border-radius: 100%;
-    box-shadow: 0 8px 8px -4px var(--dark-color);
 }
 
 .certificato{
@@ -303,7 +278,7 @@ img.logo{
     cursor: pointer;
 }
 
-@media screen and (max-width: 689px){
+@media screen and (max-width: 789px){
 
     .row.contatti{
         flex-direction: column-reverse;

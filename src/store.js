@@ -2,6 +2,26 @@ import { reactive } from 'vue'
 
 export const store = reactive({
   cartItems: 0,
+  booleanCert: false,
+  labCert: false,
+  toggleBooleanCert(){
+    if(this.booleanCert === false){
+        this.booleanCert = true
+    }else{
+        this.booleanCert = false
+    }
+  },
+  toggleLabCert(){
+      if(this.labCert === false){
+          this.labCert = true
+      }else{
+          this.labCert = false
+      }
+  },
+  closeCert(){
+      this.booleanCert = false
+      this.labCert = false
+  },
   progetti: [
     {
       nome: 'Deliveboo',
