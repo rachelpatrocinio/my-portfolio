@@ -7,6 +7,12 @@ export const store = reactive({
       nome: 'Deliveboo',
       descrizione: '...',
       foto: 'Deliveboo-1.jpg',
+      imgProgetto: [
+        'deliveboo1.png',        
+        'deliveboo2.png',
+        'deliveboo3.png',
+        'deliveboo4.png'
+      ], 
       tecnologie: ['HTML', 'SCSS', 'BOOTSTRAP', 'JS', 'VUE', 'MYSQL','LARAVEL'],
       github: [
         {

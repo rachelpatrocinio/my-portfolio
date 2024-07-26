@@ -1,5 +1,5 @@
 <template>
- <div class="card p-4 mb-4">
+ <div class="card p-4 mb-4" @click="modalProgetto = true">
     <h3 class="text-center">{{progetto.nome}}</h3>
     <img :src="imgPath + progetto.foto" alt="Anteprima">
     <ul class="d-flex flex-wrap justify-content-center  gap-2 p-0 mt-3">
@@ -11,6 +11,14 @@
         <a target="_blank" v-for="github in progetto.github" :href="github.link">Github Repository {{ github.tech }}</a>
     </div>
 </div>
+<div v-if="modalProgetto === true" class="modal-progetto">
+    <div class="container position-relative">
+        <div class="row p-5">
+            <h2>{{progetto.nome}}</h2>
+        </div>
+        <font-awesome-icon :icon="['far', 'circle-xmark']" class="close position-absolute" @click="modalProgetto = false" />
+    </div>
+</div>
 </template>
 
 <script>
@@ -20,7 +28,8 @@
         },
         data() {
             return{
-                imgPath: 'src/images/progetti/'
+                imgPath: 'src/images/progetti/',
+                modalProgetto: false
             }
         }
     }
@@ -62,6 +71,36 @@ ul{
     }   
 }
 
+.modal-progetto{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.734);
+
+    .container{
+        .row{
+            background-color: white;
+            color: var(--dark-color);
+            height: 600px;
+            overflow: auto;
+        }
+
+        .close{
+            color: var(--dark-color);
+            font-size: 40px;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+}
 
 
 </style>
