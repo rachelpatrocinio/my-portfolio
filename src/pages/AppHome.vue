@@ -39,7 +39,7 @@
         <AppProg></AppProg>
     </div>
     <div class="main-bg py-5">
-        <AppForm></AppForm>
+        <AppFormazione></AppFormazione>
         <AppEsp></AppEsp>
     </div>
 </template>
@@ -48,7 +48,7 @@
 import AppHero from '../components/AppHero.vue'
 import AppCompetenze from '../components/AppCompetenze.vue'
 import AppProg from '../components/AppProg.vue'
-import AppForm from '../components/AppForm.vue'
+import AppFormazione from '../components/AppFormazione.vue'
 import AppEsp from '../components/AppEsp.vue'
 
 
@@ -59,7 +59,7 @@ export default {
         AppHero,
         AppCompetenze,
         AppProg,
-        AppForm,
+        AppFormazione,
         AppEsp
     },
     data(){
@@ -146,60 +146,6 @@ export default {
 
         .btn-main{
             width: 90%;
-        }
-    }
-
-    .competenze{
-        h1{
-            text-align: center;
-        }
-
-        .row{
-            justify-content: center;
-
-        }
-    }
-
-
-    .progetti{
-        h1{
-            text-align: center;
-        }
-    }
-
-    .formazione{
-
-        h1{
-            text-align: center;
-        }
-
-        .row{
-            flex-direction: column-reverse;
-        }
-    }
-
-     
-    .certificato{
-        width: 100%;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 99;
-        background-color: rgba(0, 0, 0, 0.734);
-
-        .certificato-img {
-            width: 90%;
-            background-color: white;
-            position: relative;
-
-            img{
-                height: 400px;
-            }
         }
     }
 }

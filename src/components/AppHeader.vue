@@ -40,9 +40,6 @@ export default {
           <RouterLink to="/progetti">Progetti</RouterLink>
         </li>
         <li class="col">
-          <RouterLink to="/formazione">Formazione</RouterLink>
-        </li>
-        <li class="col">
           <RouterLink to="/contatti">Contatti</RouterLink>
         </li>
       </ul>

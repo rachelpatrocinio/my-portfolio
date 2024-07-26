@@ -4,7 +4,6 @@ import AppHome from './pages/AppHome.vue'
 import AppMe from './pages/AppMe.vue'
 import AppEsperienze from './pages/AppEsperienze.vue'
 import AppProgetti from './pages/AppProgetti.vue'
-import AppFormazione from './pages/AppFormazione.vue'
 import AppContatti from './pages/AppContatti.vue'
 
 
@@ -15,7 +14,6 @@ const router = createRouter({
         { path: '/sudime', component: AppMe},
         { path: '/esperienze', component: AppEsperienze},
         { path: '/progetti', component: AppProgetti},
-        { path: '/formazione', component: AppFormazione},
         { path: '/contatti', component: AppContatti}
     ]
   })
