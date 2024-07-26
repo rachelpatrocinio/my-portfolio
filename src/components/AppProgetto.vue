@@ -3,11 +3,11 @@
     <div class="container">
         <h1 class="mb-3 mb-md-5">I miei progetti in Boolean</h1>
         <div class="row m-1 m-md-0">
-            <div class="col-12 col-md-4" v-for="progetto in store.progetti" :key="progetto.id">
+            <div class="col-12 col-md-4" v-for="progetto in store.progettiHome" :key="progetto.id">
                 <AppCard :progetto="progetto"></AppCard>
             </div>
             <div class="col-12 text-white">
-                <RouterLink to="/progetti" class="router more">. . .</RouterLink>
+                <RouterLink @click="store.windowScroll()" to="/progetti" class="router more">. . . vedi altri</RouterLink>
             </div>
         </div>
     </div>
@@ -26,6 +26,14 @@ import { store } from "../store.js";
             return{
                 store
             }
+        },
+        methods:{
+            sixProj(){
+                store.progettiHome = store.progetti.filter((element, index) => index < 6);
+            }
+        },
+        created(){
+            this.sixProj()
         }
     }
 </script>
@@ -42,6 +50,14 @@ import { store } from "../store.js";
 
         &:hover{
             color: var(--main-dark-color);
+        }
+    }
+}
+
+@media screen and (max-width: 789px){
+    .progetti{
+        h1{
+            text-align: center;
         }
     }
 }
