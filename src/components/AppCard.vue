@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import imgPath from '../../public/progetti/';
     export default {
         props:{
             progetto: Object
@@ -30,7 +31,7 @@
         data() {
             return{
                 modalProgetto: false,
-                imgPath: require('../../public/progetti/')
+                imgPath
             }
         }
     }
