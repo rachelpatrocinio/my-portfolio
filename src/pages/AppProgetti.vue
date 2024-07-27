@@ -3,7 +3,7 @@
         <div class="row py-5">
             <h1 class="my-4">I miei progetti</h1>
             <div class="col-12 col-md-4" v-for="progetto in store.progetti">
-                <AppCard  :progetto="progetto"></AppCard>
+                <AppCard :progetto="progetto"></AppCard>
             </div>
         </div>
     </div>
