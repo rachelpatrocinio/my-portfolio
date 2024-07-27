@@ -37,9 +37,9 @@
         </section>
         <AppCompetenze></AppCompetenze>
         <section class="progetti">
-            <div class="container py-5">
-                <div class="row py-5">
-                    <h1 class="my-4">I miei progetti</h1>
+            <div class="container pb-5">
+                <div class="row pb-5">
+                    <h1 class="mb-4">I miei progetti</h1>
                     <div class="col-12 col-md-4" v-for="progetto in store.progettiHome">
                         <AppCard :progetto="progetto"></AppCard>
                     </div>

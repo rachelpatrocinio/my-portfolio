@@ -1,7 +1,7 @@
 <template>
  <div class="card p-4 mb-4" @click="modalProgetto = true">
     <h3 class="text-center">{{progetto.nome}}</h3>
-    <img class="card-img" :src="'../../public/progetti/'+imgPath" alt="Anteprima">
+    <img class="card-img" :src="imgPath" alt="Anteprima">
     <ul class="d-flex flex-wrap justify-content-center gap-2 p-0 mt-3">
         <li v-for="tecnica in progetto.tecnologie">
             <p class="p-2 m-0 badge" :class="tecnica">{{ tecnica }}</p>
@@ -15,7 +15,7 @@
     <div class="container position-relative">
         <div class="row p-5 rounded">
             <h2>{{progetto.nome}}</h2>
-            <img :src="imgPath" alt="Anteprima">
+            <img :src="'../../public/progetti/'+imgPath" alt="Anteprima">
         </div>
         <font-awesome-icon :icon="['far', 'circle-xmark']" class="close position-absolute" @click="modalProgetto = false" />
     </div>
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import image from "../../public/progetti/portfolio.jpg"
     export default {
         props:{
             progetto: Object
@@ -30,7 +31,7 @@
         data() {
             return{
                 modalProgetto: false,
-                imgPath: this.progetto.foto
+                imgPath: image
             }
         }
     }
