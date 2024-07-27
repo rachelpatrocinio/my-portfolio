@@ -36,7 +36,19 @@
             </div>
         </section>
         <AppCompetenze></AppCompetenze>
-        <AppProgetto></AppProgetto>
+        <section class="progetti">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <h1 class="my-4">I miei progetti</h1>
+                    <div class="col-12 col-md-4" v-for="progetto in store.progettiHome">
+                        <AppCard :progetto="progetto"></AppCard>
+                    </div>
+                    <div class="col-12 text-white">
+                        <RouterLink @click="store.windowScroll()" to="/progetti" class="router more">. . . vedi altri</RouterLink>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="main-bg py-5">
         <AppFormazione></AppFormazione>
@@ -46,8 +58,8 @@
 
 <script>
 import AppHero from '../components/AppHero.vue'
+import AppCard from '../components/AppCard.vue'
 import AppCompetenze from '../components/AppCompetenze.vue'
-import AppProgetto from '../components/AppProgetto.vue'
 import AppFormazione from '../components/AppFormazione.vue'
 import AppEsp from '../components/AppEsp.vue'
 
@@ -57,8 +69,8 @@ import { store } from "../store.js";
 export default {
     components: {
         AppHero,
+        AppCard,
         AppCompetenze,
-        AppProgetto,
         AppFormazione,
         AppEsp
     },
@@ -66,6 +78,14 @@ export default {
         return{
             store
         }
+    },
+    methods:{
+        sixProj(){
+            store.progettiHome = store.progetti.filter((element, index) => index < 6);
+        }
+    },
+    created(){
+        this.sixProj()
     }
 }
 </script>
@@ -128,6 +148,21 @@ export default {
     }
 }
 
+.progetti{
+    h1{
+        color: var(--main-color);
+    }
+
+    .more{
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--main-dark-color);
+        }
+    }
+}
+
 @media screen and (max-width: 789px){
 
     .row.contatti{
@@ -146,6 +181,12 @@ export default {
 
         .btn-main{
             width: 90%;
+        }
+    }
+
+    .progetti{
+        h1{
+            text-align: center;
         }
     }
 }
