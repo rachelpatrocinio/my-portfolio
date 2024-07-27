@@ -16,14 +16,14 @@
                         </button>
                         <div class="certificato" v-if="store.booleanCert === true">
                             <div class="certificato-img rounded p-5">
-                                <img src="../images/certificati/boolean.jpeg" alt="">
+                                <img src="../../public/certificati/boolean.jpeg" alt="">
                                 <font-awesome-icon :icon="['far', 'circle-xmark']" class="close" @click="store.closeCert()" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-end my-5 m-md-0">
-                    <img class="logo" src="../images/boolean.png" alt="">
+                    <img class="logo" src="../../public/boolean.png" alt="">
                 </div>
             </div>
 
@@ -40,14 +40,14 @@
                         </button>
                         <div class="certificato" v-if="store.labCert === true">
                             <div class="certificato-img rounded p-5">
-                                <img src="../images/certificati/lab.jpg" alt="">
+                                <img src="../../public/certificati/lab.jpg" alt="">
                                 <font-awesome-icon :icon="['far', 'circle-xmark']" class="close" @click="store.closeCert()" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-end my-5 m-md-0">
-                    <img class="logo" src="../images/labforweb.png" alt="">
+                    <img class="logo" src="../../public/labforweb.png" alt="">
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                     <p>MATERIE PRINCIPALI: Accoglienza Turistica, Tecniche delle comunicazioni, Amministrazione economica del Turismo</p>
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-end my-5 m-md-0">
-                    <img class="logo" src="../images/amerigo.png" alt="">
+                    <img class="logo" src="../../public/amerigo.png" alt="">
                 </div>
             </div>
         </div>
