@@ -30,7 +30,7 @@
         data() {
             return{
                 modalProgetto: false,
-                imgPath: '../../public/progetti/' + this.progetto.foto
+                imgPath: './public/progetti/' + this.progetto.foto
             }
         }
     }
