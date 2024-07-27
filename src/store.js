@@ -29,7 +29,7 @@ export const store = reactive({
     {
       nome: 'Portfolio',
       descrizione: '...',
-      foto: 'portfolio.jpg',
+      foto: '../../public/progetti/portfolio.jpg',
       tecnologie: ['HTML', 'SCSS', 'BOOTSTRAP', 'JS', 'VUE'],
       github: [
         {
@@ -40,7 +40,7 @@ export const store = reactive({
     {
       nome: 'Deliveboo',
       descrizione: '...',
-      foto: 'deliveboo.jpg',
+      foto: '../../public/progetti/deliveboo.jpg',
       imgProgetto: [
         'deliveboo1.png',        
         'deliveboo2.png',
@@ -62,7 +62,7 @@ export const store = reactive({
     {
       nome: 'Game Creator',
       descrizione: '...',
-      foto: 'game.jpg',
+      foto: '../../public/progetti/game.jpg',
       tecnologie: ['HTML', 'SCSS', 'BOOTSTRAP', 'MYSQL', 'PHP', 'LARAVEL'],
       github: [
         {
@@ -73,7 +73,7 @@ export const store = reactive({
     {
       nome: 'Dc Comics',
       descrizione: '...',
-      foto: 'dc.jpg',
+      foto: '../../public/progetti/dc.jpg',
       tecnologie: ['HTML', 'SCSS','BOOTSTRAP','PHP', 'LARAVEL'],
       github: [
         {
@@ -84,7 +84,7 @@ export const store = reactive({
     {
       nome: 'iAcademy',
       descrizione: '...',
-      foto: 'iacademy.jpg',
+      foto: '../../public/progetti/iacademy.jpg',
       tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
       github: [
         {
@@ -95,7 +95,7 @@ export const store = reactive({
     {
       nome: 'Boolflix',
       descrizione: '...',
-      foto: 'boolflix.jpg',
+      foto: '../../public/progetti/boolflix.jpg',
       tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
       github: [
         {
@@ -106,7 +106,7 @@ export const store = reactive({
     {
       nome: 'Boolzapp',
       descrizione: '...',
-      foto: 'Boolzapp.jpg',
+      foto: '../../public/progetti/Boolzapp.jpg',
       tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
       github: [
         {
