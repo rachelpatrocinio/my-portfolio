@@ -10,11 +10,11 @@
                         </button>
                         <div class="socials mt-3">
                             <a class="d-flex justify-content-center align-items-center gap-2 social" target="_blank" href="https://www.linkedin.com/in/rachel-anne-patrocinio-80811b315/">
-                            <img src="../images/linkedin.png" alt="">
+                            <img src="../../public/icons/linkedin.png" alt="">
                             <p class="p-0 m-0">Linked in</p>
                             </a>
                             <a class="d-flex justify-content-center align-items-center gap-2 social" target="_blank" href="https://github.com/rachelpatrocinio">
-                            <img src="../images/github-sign.png" alt="">
+                            <img src="../../public/icons/github.png" alt="">
                             <p class="p-0 m-0">Github</p>
                             </a>
                         </div>
