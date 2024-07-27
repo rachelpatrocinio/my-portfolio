@@ -1,7 +1,7 @@
 <template>
  <div class="card p-4 mb-4" @click="modalProgetto = true">
     <h3 class="text-center">{{progetto.nome}}</h3>
-    <img class="card-img" src="../../public/progetti/protfolio.jpg" alt="Anteprima">
+    <img class="card-img" src="../../public/progetti/portfolio.jpg" alt="Anteprima">
     <ul class="d-flex flex-wrap justify-content-center gap-2 p-0 mt-3">
         <li v-for="tecnica in progetto.tecnologie">
             <p class="p-2 m-0 badge" :class="tecnica">{{ tecnica }}</p>
