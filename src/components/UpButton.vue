@@ -39,8 +39,9 @@ export default {
 
 @media screen and (max-width: 389px){
     .up-button{
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
+        padding: 20px;
 
         .fs-1{
             font-size: 20px;
