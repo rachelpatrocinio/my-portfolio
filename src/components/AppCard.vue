@@ -20,9 +20,7 @@
             <div class="repository">
                 <a target="_blank" v-for="github in progetto.github" :href="github.link">Github Repository {{ github.tech }}</a>
             </div>
-            <figure class="p-4">
-                <img class="img-anteprima" :src="getImagePath(progetto.foto)" alt="Anteprima">
-            </figure>
+            <img :src="getImagePath(progetto.foto)" alt="Anteprima">
             <img class="my-5" v-for="img in progetto.imgProgetto" :src="getImagePath(img)" alt="Anteprima">
             <figure class="col-6" v-if="progetto.imgMobile">
                 <h4>Mobile</h4>
@@ -114,15 +112,6 @@ ul{
             color: var(--dark-color);
             height: 700px;
             overflow: auto;
-
-            figure{
-
-                img.img-anteprima{
-                    height: 500px;
-                    padding: 10px;
-                    border: 2px solid var(--dark-color);
-                }
-            }
            
         }
 
@@ -133,6 +122,12 @@ ul{
             right: 10px;
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (max-width: 789px){
+    img.img-anteprima{
+        height: 100px;
     }
 }
 
