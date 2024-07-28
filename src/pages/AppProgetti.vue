@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .container{
-    width: 80%;
+    width: 90%;
 }
 
 @media screen and (max-width: 789px) {

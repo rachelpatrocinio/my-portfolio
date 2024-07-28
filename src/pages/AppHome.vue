@@ -39,7 +39,7 @@
         <section class="progetti">
             <div class="container pb-5">
                 <div class="row pb-5">
-                    <h1 class="mb-4">I miei progetti</h1>
+                    <h1 class="mb-4">Alcuni progetti</h1>
                     <div class="col-12 col-md-4" v-for="progetto in store.progettiHome">
                         <AppCard :progetto="progetto"></AppCard>
                     </div>

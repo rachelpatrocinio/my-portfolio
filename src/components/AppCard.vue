@@ -7,15 +7,31 @@
             <p class="p-2 m-0 badge" :class="tecnica">{{ tecnica }}</p>
         </li>
     </ul>
+    <p class="mt-1 descrizione">{{ progetto.descrizione }}</p>
     <div class="repository">
-        <a target="_blank" v-for="github in progetto.github" :href="github.link">Github Repository {{ github.tech }}</a>
+        <a class="text-center" target="_blank" v-for="github in progetto.github" :href="github.link">Github Repository {{ github.tech }}</a>
     </div>
 </div>
 <div v-if="modalProgetto === true" class="modal-progetto">
     <div class="container position-relative">
         <div class="row p-5 rounded">
-            <h2>{{progetto.nome}}</h2>
-            <img :src="getImagePath(progetto.foto)" alt="Anteprima">
+            <h2 class="mb-3">{{progetto.nome}}</h2>
+            <p>{{ progetto.descrizione }}</p>
+            <div class="repository">
+                <a target="_blank" v-for="github in progetto.github" :href="github.link">Github Repository {{ github.tech }}</a>
+            </div>
+            <figure class="p-4">
+                <img class="img-anteprima" :src="getImagePath(progetto.foto)" alt="Anteprima">
+            </figure>
+            <img class="my-5" v-for="img in progetto.imgProgetto" :src="getImagePath(img)" alt="Anteprima">
+            <figure class="col-6" v-if="progetto.imgMobile">
+                <h4>Mobile</h4>
+                <img class="col-6 mb-3" :src="getImagePath(progetto.imgMobile)" alt="Anteprima">
+            </figure>
+            <figure class="col-6" v-if="progetto.imgTablet">
+                <h4>Tablet</h4>
+                <img class="col-6 mb-3" :src="getImagePath(progetto.imgTablet)" alt="Anteprima">
+            </figure>
         </div>
         <font-awesome-icon :icon="['far', 'circle-xmark']" class="close position-absolute" @click="modalProgetto = false" />
     </div>
@@ -46,7 +62,7 @@
     cursor: pointer;
     
     &:hover{
-        transform: scale(1.01);
+        transform: scale(1.05);
         transition: all 0.6s;
     }
 
@@ -54,11 +70,14 @@
         height: 200px;
         object-fit: cover;
     }
+
+    .descrizione{
+        height: 130px;
+        font-size: 14px;
+    }
 }
 
 ul{
-    height: 70px;
-
     li{
         margin: 0;
         color: white;
@@ -68,10 +87,9 @@ ul{
 }
 
 .repository{
-    height: 50px;
+    height: 40px;
 
     a{
-        text-align: center;
         color: currentColor;
         display: block;
     }   
@@ -97,10 +115,15 @@ ul{
             height: 700px;
             overflow: auto;
 
-            img{
-                height: 500px;
-                object-fit: contain;
+            figure{
+
+                img.img-anteprima{
+                    height: 500px;
+                    padding: 10px;
+                    border: 2px solid var(--dark-color);
+                }
             }
+           
         }
 
         .close{
