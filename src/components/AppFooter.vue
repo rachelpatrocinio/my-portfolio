@@ -16,7 +16,7 @@ export default {
 <footer class="dark-bg">
   <div class="container py-5">
     <div class="row justify-content-between">
-      <div class="col-12 col-md-4 d-md-flex gap-3">
+      <div class="col-12 col-md-6 d-md-flex gap-3">
         <a class="d-flex align-items-center gap-2 social mb-2 mb-md-0" target="_blank" href="https://www.linkedin.com/in/rachel-anne-patrocinio-80811b315/">
           <img src="../../public/icons/linkedin.png" alt="">
           <p class="p-0 m-0">Linked in</p>
@@ -26,7 +26,7 @@ export default {
           <p class="p-0 m-0">Github</p>
         </a>
       </div>
-      <div class="col-12 col-md-4 text-md-end mt-4 m-md-0">
+      <div class="col-12 col-md-6 text-md-end mt-4 m-md-0">
         <p class="m-0">RACHEL ANNE RABANG PATROCINIO &copy;</p>
         <a class="contatti" href="mailto:rachelannepatrocinio@gmail.com">rachelannepatrocinio@gmail.com</a>
         <a class="contatti" href="tel:+393271437327">+39 327 1437 327</a>
@@ -63,15 +63,15 @@ a.contatti{
   }
 }
 
-@media screen and (max-width: 689px) {
+// @media screen and (max-width: 689px) {
 
-  footer{
-    .row{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+//   footer{
+//     .row{
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
   
-}
+// }
 </style>

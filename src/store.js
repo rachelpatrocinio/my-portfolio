@@ -248,7 +248,7 @@ export const store = reactive({
       ]
     },
     {
-      nome: 'CodingChallenge-Lim',
+      nome: 'Challenge-Lim',
       descrizione: 'Replica del sito Lime. Questo è il primo progetto realizzato prima di iniziare il percorso in Boolean (progetto richiesto da Boolean per la selezione).',
       foto: 'coding-challenge.jpg',
       tecnologie: ['HTML', 'CSS'],

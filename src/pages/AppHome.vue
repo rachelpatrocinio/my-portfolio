@@ -25,7 +25,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-10 col-md-8 main-dark-bg rounded p-3 p-md-5">
+                    <div class="col-10 col-md-8 main-dark-bg rounded p-4 p-lg-5">
                         <p class="m-0">
                             👋 Ciao! Benvenuti nel mio Sito Portfolio! Sono Rachel ! Ho 26 anni e sono di 📍 Roma! <br><br>
                             🙋‍♀️ Attualmente sono alla ricerca di un lavoro che mi sappia stimolare e mi aiuti ad arricchire il mio bagaglio da Full Stack Web Developer! <br><br>
@@ -46,7 +46,7 @@
             <div class="container pb-5">
                 <div class="row pb-5">
                     <h1 class="mb-4">Alcuni progetti</h1>
-                    <div class="col-12 col-md-4" v-for="progetto in store.progettiHome">
+                    <div class="col-12 col-md-6 col-lg-4" v-for="progetto in store.progettiHome">
                         <AppCard :progetto="progetto"></AppCard>
                     </div>
                     <div class="col-12 text-white">
@@ -99,21 +99,25 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/partials/layout';
 
+.row.contatti{
+    flex-direction: column-reverse;
+}
+
 .me{
 
-    .col-md-4{
+    .col-12{
         position: relative;
-        bottom: 180px;
+        bottom: 80px;
     }
 
-    .col-md-8{
+    .col-10{
         position: relative;
-        bottom: 180px;
+        bottom: 100px;
         font-weight: 800;
     }
 
     .btn-main{
-        width: 90%;
+        width: 85%;
         transition: all 0.9s;
         background-color: var(--main-dark-color);
         color: var(--dark-color);
@@ -175,39 +179,88 @@ export default {
     }
 }
 
-@media screen and (max-width: 789px){
-
+@media screen and (min-width: 768px){
     .row.contatti{
-        flex-direction: column-reverse;
-    }
-
-    .me{
+        flex-direction: row;
 
         .col-md-4{
-            bottom: 70px;
+            bottom: 210px;
         }
 
-        .col-md-8{
-            bottom: 80px;
-        }
-
-        .btn-main{
-            width: 90%;
-        }
-    }
-
-    .progetti{
-        h1{
-            text-align: center;
+        .socials{
+            a{
+                font-size: 13px;
+            }
         }
     }
 }
 
-@media screen and (min-width: 998px) {
-    .me{
-        .container{
-            height: 300px;
+@media screen and (min-width: 998px){
+    .row.contatti{
+
+        .col-md-4{
+            bottom: 180px;
+        }
+
+        .socials{
+            a{
+                font-size: 16px;
+            }
         }
     }
 }
+// @media screen and (min-width: 698px){
+
+//     .me{
+
+//         .col-md-4{
+//             bottom: 70px;
+//         }
+
+//         .col-md-8{
+//             bottom: 80px;
+//         }
+
+//         .btn-main{
+//             width: 90%;
+//         }
+//     }
+
+//     .progetti{
+//         h1{
+//             text-align: center;
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 698px) {
+
+//     .me{
+//         .col-md-4{
+//             bottom: 210px;
+
+//             a.social{
+//                 font-size: 13px;
+//             }
+//         }
+
+//         .col-md-8{
+//             bottom: 100px;
+//         }
+//     }
+
+// }
+
+// @media screen and (min-width: 998px) {
+
+//     .row.contatti{
+//         flex-direction: row;
+//     }
+
+//     .me{
+//         .container{
+//             height: 300px;
+//         }
+//     }
+// }
 </style>

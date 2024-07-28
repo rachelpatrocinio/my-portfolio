@@ -1,6 +1,6 @@
 <template>
  <div class="card p-4 mb-4" @click="modalProgetto = true">
-    <h3 class="text-center">{{progetto.nome}}</h3>
+    <h3 class="text-center title">{{progetto.nome}}</h3>
     <img class="card-img" :src="getImagePath(progetto.foto)" alt="Anteprima">
     <ul class="d-flex flex-wrap justify-content-center gap-2 p-0 mt-3">
         <li v-for="tecnica in progetto.tecnologie">
@@ -70,12 +70,13 @@
     }
 
     .descrizione{
-        height: 130px;
+        height: 150px;
         font-size: 14px;
     }
 }
 
 ul{
+    height: 50px;
     li{
         margin: 0;
         color: white;
@@ -110,7 +111,7 @@ ul{
         .row{
             background-color: white;
             color: var(--dark-color);
-            height: 700px;
+            height: 500px;
             overflow: auto;
            
         }
@@ -125,11 +126,29 @@ ul{
     }
 }
 
-@media screen and (max-width: 789px){
-    .row{
-        height: 200px;
+@media screen and (min-width: 768px){
+
+    .card{
+        .title{
+            font-size: 20px;
+        }
+    }
+
+    .modal-progetto{
+        .container{
+            .row{
+                height: 800px;
+
+            }
+        }
     }
 }
 
-
+@media screen and (min-width: 998px){
+    .card{
+        .title{
+            font-size: 30px;
+        }
+    }
+}
 </style>

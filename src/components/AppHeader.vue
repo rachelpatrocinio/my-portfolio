@@ -26,7 +26,7 @@ export default {
 <header class="header py-4">
   <div class="container d-flex justify-content-center">
     <nav class="col-8">
-      <ul class="menu d-md-flex m-0 p-0">
+      <ul class="menu m-0 p-0">
         <li class="col">
           <RouterLink @click="store.windowScroll()" to="/">Home</RouterLink>
         </li>
@@ -40,10 +40,10 @@ export default {
     </nav>
   </div>
   <div class="text-end me-3">
-    <font-awesome-icon :icon="['fas', 'bars']" class="hamburger d-md-none" @click="toggleDropdown"/>
+    <font-awesome-icon :icon="['fas', 'bars']" class="hamburger" @click="toggleDropdown"/>
   </div>
   <div class="dropdown" v-if="dropdown === true">
-    <ul class="menu m-0 p-0">
+    <ul class="menu-dropdown m-0 p-0">
         <li @click="store.windowScroll()" class="col">
           <RouterLink to="/" @click="dropdown = false">Home</RouterLink>
         </li>
@@ -67,6 +67,10 @@ export default {
   right:0;
   background-color: var(--main-color);
   z-index: 99;
+
+  .menu{
+    display: none;
+  }
 }
 
 ul{
@@ -96,12 +100,15 @@ ul{
   }
 }
 
-@media screen and (max-width: 789px) {
-  .header{
+@media screen and (min-width: 789px){
 
-    nav{
-      display: none;
+  .header{
+    .menu{
+      display: flex;
     }
+  }
+  .hamburger{
+    display: none;
   }
 }
 </style>

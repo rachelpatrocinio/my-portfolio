@@ -44,16 +44,4 @@
     }
 }
 
-@media screen and (max-width: 789px){
-    .competenze{
-        h1{
-            text-align: center;
-        }
-
-        .row{
-            justify-content: center;
-        }
-    }
-}
-
 </style>

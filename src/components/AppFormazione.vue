@@ -135,41 +135,41 @@ export default {
     cursor: pointer;
 }
 
-@media screen and (max-width: 789px){
+// @media screen and (max-width: 789px){
 
-    .row{
+//     .row{
 
-        h1{
-            text-align: center;
-        }
-        .col-12{
-            flex-direction: column-reverse;
-        }
-    }
+//         h1{
+//             text-align: center;
+//         }
+//         .col-12{
+//             flex-direction: column-reverse;
+//         }
+//     }
 
-    .certificato{
-        width: 100%;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 99;
-        background-color: rgba(0, 0, 0, 0.734);
+//     .certificato{
+//         width: 100%;
+//         position: fixed;
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         z-index: 99;
+//         background-color: rgba(0, 0, 0, 0.734);
 
-        .certificato-img {
-            width: 90%;
-            background-color: white;
-            position: relative;
+//         .certificato-img {
+//             width: 90%;
+//             background-color: white;
+//             position: relative;
 
-            img{
-                height: 400px;
-            }
-        }
-    }
+//             img{
+//                 height: 400px;
+//             }
+//         }
+//     }
 
-}
+// }
 </style>
