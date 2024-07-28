@@ -20,7 +20,6 @@ export default {
     background-color: var(--main-dark-color);
     width: 70px;
     height: 70px;
-    line-height: 30px;
     color: white;
     text-align: center;
     position: fixed;
@@ -40,7 +39,12 @@ export default {
 
 @media screen and (max-width: 389px){
     .up-button{
-        width: 20px;
+        width: 30px;
+        height: 30px;
+
+        .fs-1{
+            font-size: 20px;
+        }
     }
 }
 
