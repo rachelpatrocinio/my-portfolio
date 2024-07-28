@@ -29,7 +29,9 @@ export const store = reactive({
     {
       nome: 'Portfolio',
       descrizione: 'Sito Portfolio personale. Qui sono presenti varie sezioni dove parlo di me, presento i miei progetti e il mio percorso formativo e lavorativo.',
-      foto: 'portfolio.jpg',
+      foto: 'portfolio.jpg', 
+      imgMobile:'portfolio-mobile.png',
+      imgTablet: 'portfolio-tablet.png',
       tecnologie: ['HTML', 'SCSS', 'BOOTSTRAP', 'JS', 'VUE'],
       github: [
         {
