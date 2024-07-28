@@ -22,11 +22,11 @@
             </div>
             <img :src="getImagePath(progetto.foto)" alt="Anteprima">
             <img class="my-5" v-for="img in progetto.imgProgetto" :src="getImagePath(img)" alt="Anteprima">
-            <figure class="col-6" v-if="progetto.imgMobile">
+            <figure class="col-6 mt-2" v-if="progetto.imgMobile">
                 <h4>Mobile</h4>
                 <img class="col-6 mb-3" :src="getImagePath(progetto.imgMobile)" alt="Anteprima">
             </figure>
-            <figure class="col-6" v-if="progetto.imgTablet">
+            <figure class="col-6 mt-2" v-if="progetto.imgTablet">
                 <h4>Tablet</h4>
                 <img class="col-6 mb-3" :src="getImagePath(progetto.imgTablet)" alt="Anteprima">
             </figure>
@@ -113,7 +113,6 @@ ul{
             color: var(--dark-color);
             height: 500px;
             overflow: auto;
-           
         }
 
         .close{
@@ -137,8 +136,7 @@ ul{
     .modal-progetto{
         .container{
             .row{
-                height: 800px;
-
+                height: 650px;
             }
         }
     }

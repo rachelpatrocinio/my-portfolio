@@ -62,16 +62,4 @@ a.contatti{
     color: var(--main-color);
   }
 }
-
-// @media screen and (max-width: 689px) {
-
-//   footer{
-//     .row{
-//       flex-direction: column;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-  
-// }
 </style>

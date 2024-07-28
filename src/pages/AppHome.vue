@@ -25,7 +25,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-10 col-md-8 main-dark-bg rounded p-4 p-lg-5">
+                    <div class="col-10 col-md-8 main-dark-bg rounded p-4">
                         <p class="m-0">
                             👋 Ciao! Benvenuti nel mio Sito Portfolio! Sono Rachel ! Ho 26 anni e sono di 📍 Roma! <br><br>
                             🙋‍♀️ Attualmente sono alla ricerca di un lavoro che mi sappia stimolare e mi aiuti ad arricchire il mio bagaglio da Full Stack Web Developer! <br><br>
@@ -199,7 +199,11 @@ export default {
     .row.contatti{
 
         .col-md-4{
-            bottom: 180px;
+            bottom: 160px;
+        }
+
+        .col-md-8{
+            bottom: 160px;
         }
 
         .socials{
@@ -209,58 +213,4 @@ export default {
         }
     }
 }
-// @media screen and (min-width: 698px){
-
-//     .me{
-
-//         .col-md-4{
-//             bottom: 70px;
-//         }
-
-//         .col-md-8{
-//             bottom: 80px;
-//         }
-
-//         .btn-main{
-//             width: 90%;
-//         }
-//     }
-
-//     .progetti{
-//         h1{
-//             text-align: center;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 698px) {
-
-//     .me{
-//         .col-md-4{
-//             bottom: 210px;
-
-//             a.social{
-//                 font-size: 13px;
-//             }
-//         }
-
-//         .col-md-8{
-//             bottom: 100px;
-//         }
-//     }
-
-// }
-
-// @media screen and (min-width: 998px) {
-
-//     .row.contatti{
-//         flex-direction: row;
-//     }
-
-//     .me{
-//         .container{
-//             height: 300px;
-//         }
-//     }
-// }
 </style>

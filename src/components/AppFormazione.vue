@@ -98,6 +98,10 @@ export default {
                 border-radius: 100%;
                 box-shadow: 0 8px 8px -4px var(--dark-color);
             }
+
+            .col-12{
+                flex-direction: column-reverse;
+            }
         }
     }
 }
@@ -116,12 +120,13 @@ export default {
   background-color: rgba(0, 0, 0, 0.734);
 
   .certificato-img {
-    width: 40%;
+    width: 600px;
     background-color: white;
     position: relative;
 
     img{
-        height: 600px;
+        width: 80%;
+        object-fit: contain;
     }
   }
 }
@@ -135,41 +140,18 @@ export default {
     cursor: pointer;
 }
 
-// @media screen and (max-width: 789px){
+@media screen and (min-width: 789px){
 
-//     .row{
+    .formazione{
+        
+        .container{
 
-//         h1{
-//             text-align: center;
-//         }
-//         .col-12{
-//             flex-direction: column-reverse;
-//         }
-//     }
-
-//     .certificato{
-//         width: 100%;
-//         position: fixed;
-//         top: 0;
-//         bottom: 0;
-//         left: 0;
-//         right: 0;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         z-index: 99;
-//         background-color: rgba(0, 0, 0, 0.734);
-
-//         .certificato-img {
-//             width: 90%;
-//             background-color: white;
-//             position: relative;
-
-//             img{
-//                 height: 400px;
-//             }
-//         }
-//     }
-
-// }
+            .row{
+                .col-12{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
 </style>
