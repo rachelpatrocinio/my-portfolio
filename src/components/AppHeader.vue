@@ -63,9 +63,6 @@ export default {
           <RouterLink to="/progetti" @click="dropdown = false">Progetti</RouterLink>
         </li>
         <li @click="store.windowScroll()" class="col">
-          <RouterLink to="/formazione" @click="dropdown = false">Formazione</RouterLink>
-        </li>
-        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/contatti" @click="dropdown = false">Contatti</RouterLink>
         </li>
       </ul>
