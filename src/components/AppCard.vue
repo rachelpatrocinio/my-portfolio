@@ -126,8 +126,8 @@ ul{
 }
 
 @media screen and (max-width: 789px){
-    img.img-anteprima{
-        height: 100px;
+    .row{
+        height: 200px;
     }
 }
 
