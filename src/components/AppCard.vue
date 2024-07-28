@@ -15,7 +15,7 @@
     <div class="container position-relative">
         <div class="row p-5 rounded">
             <h2>{{progetto.nome}}</h2>
-            <img :src="imgPath" alt="Anteprima">
+            <img :src="getImagePath(progetto.foto)" alt="Anteprima">
         </div>
         <font-awesome-icon :icon="['far', 'circle-xmark']" class="close position-absolute" @click="modalProgetto = false" />
     </div>
@@ -23,15 +23,13 @@
 </template>
 
 <script>
-// import image from "../../public/progetti/portfolio.jpg"
     export default {
         props:{
             progetto: Object
         },
         data() {
             return{
-                modalProgetto: false,
-                // imgPath: image
+                modalProgetto: false
             }
         },
         methods:{
