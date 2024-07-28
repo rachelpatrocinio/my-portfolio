@@ -110,5 +110,8 @@ ul{
   .hamburger{
     display: none;
   }
+  .dropdown{
+    display: none;
+  }
 }
 </style>
