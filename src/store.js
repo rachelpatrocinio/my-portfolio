@@ -104,6 +104,9 @@ export const store = reactive({
       nome: 'iAcademy',
       descrizione: 'Il progetto è stato realizzato a metà del percorso di studi in Boolean. Questo lavoro consiste nella riproduzione del sito iAcademy, utilizzando tutti gli strumenti appresi durante la prima parte del corso di front-end con Boolean.',
       foto: 'iacademy.jpg',
+      imgProgetto: [
+        'iacademy.png'
+      ], 
       tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
       github: [
         {
