@@ -32,7 +32,8 @@
 
             </div>
             <div class="col-12">
-                <h2>CARPISA - DESIGUAL - ALCOTT</h2>
+                <h2 class="mb-0">ALCOTT - DESIGUAL - CARPISA</h2>
+                <p>Capri S.R.L - Ints Italia S.R.L - Kuvera S.P.A</p>
                 <h5>COMMESSA</h5>
                 <h6>2016 | 2022</h6>
                 <p>
@@ -43,6 +44,7 @@
                     preciso e veloce, rispondendo e soddisfacendo specifiche richieste
                     della clientela.
                 </p>
+                <p>Mansioni principali: vendita assistita, cassa - contabilità chiusura cassa, scarico merce, riordino merce in magazzino</p>
             </div>
         </div>
     </div>

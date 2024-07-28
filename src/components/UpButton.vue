@@ -27,7 +27,7 @@ export default {
     right: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
-    z-index: 99;
+    z-index: 98;
     border-radius: 15px;
 }
 

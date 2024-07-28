@@ -99,6 +99,17 @@ export const store = reactive({
       ]
     },
     {
+      nome: 'iAcademy',
+      descrizione: 'Il progetto è stato realizzato a metà del percorso di studi in Boolean. Questo lavoro consiste nella riproduzione del sito iAcademy, utilizzando tutti gli strumenti appresi durante la prima parte del corso di front-end con Boolean.',
+      foto: 'iacademy.jpg',
+      tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
+      github: [
+        {
+          link: 'https://github.com/rachelpatrocinio/proj-html-vuejs'
+        }
+      ]
+    },
+    {
       nome: 'php-dischi-json',
       descrizione: 'Una web-app ispirata a Spotify che consente di visualizzare una lista di dischi presenti sul server.',
       foto: 'boolify.jpg',
@@ -109,17 +120,6 @@ export const store = reactive({
       github: [
         {
           link: 'https://github.com/rachelpatrocinio/php-dischi-json'
-        }
-      ]
-    },
-    {
-      nome: 'iAcademy',
-      descrizione: 'Il progetto è stato realizzato a metà del percorso di studi in Boolean. Questo lavoro consiste nella riproduzione del sito iAcademy, utilizzando tutti gli strumenti appresi durante la prima parte del corso di front-end con Boolean.',
-      foto: 'iacademy.jpg',
-      tecnologie: ['HTML', 'CSS','BOOTSTRAP', 'JS', 'VUE'],
-      github: [
-        {
-          link: 'https://github.com/rachelpatrocinio/proj-html-vuejs'
         }
       ]
     },

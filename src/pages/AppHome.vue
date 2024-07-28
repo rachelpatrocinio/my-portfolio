@@ -6,16 +6,22 @@
                 <div class="row contatti justify-content-end align-items-center">
                     <div class="col-12 col-md-4 text-center">
                         <button class="btn btn-main p-2 mt-2 mt-md-0 grow">
-                            <RouterLink @click="store.windowScroll()" class="router" to="/contatti">📞 CONTATTAMI 📩</RouterLink>
+                            <a class="contattami" href="mailto:rachelannepatrocinio@gmail.com">CONTATTAMI 📩</a>
                         </button>
                         <div class="socials mt-3">
+                            <a class="d-flex justify-content-center align-items-center gap-2 social" href="mailto:rachelannepatrocinio@gmail.com">
+                                <p class="p-0 m-0">📩 rachelannepatrocinio@gmail.com</p>
+                            </a>
+                            <a href="tel:+393271437327" class="d-flex justify-content-center align-items-center gap-2 social" target="_blank">
+                                <p class="p-0 m-0">📞 +39 327 1437 327</p>
+                            </a>
                             <a class="d-flex justify-content-center align-items-center gap-2 social" target="_blank" href="https://www.linkedin.com/in/rachel-anne-patrocinio-80811b315/">
-                            <img src="../../public/icons/linkedin.png" alt="">
-                            <p class="p-0 m-0">Linked in</p>
+                                <img src="../../public/icons/linkedin.png" alt="">
+                                <p class="p-0 m-0">Linked in</p>
                             </a>
                             <a class="d-flex justify-content-center align-items-center gap-2 social" target="_blank" href="https://github.com/rachelpatrocinio">
-                            <img src="../../public/icons/github.png" alt="">
-                            <p class="p-0 m-0">Github</p>
+                                <img src="../../public/icons/github.png" alt="">
+                                <p class="p-0 m-0">Github</p>
                             </a>
                         </div>
                     </div>
@@ -97,7 +103,7 @@ export default {
 
     .col-md-4{
         position: relative;
-        bottom: 200px;
+        bottom: 180px;
     }
 
     .col-md-8{
@@ -115,6 +121,12 @@ export default {
 
         &:hover{
             background-color: var(--main-color);
+        }
+
+        .contattami{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
         }
     }
 

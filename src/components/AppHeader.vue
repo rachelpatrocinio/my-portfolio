@@ -34,13 +34,7 @@ export default {
           <RouterLink @click="store.windowScroll()" to="/sudime">Su di me</RouterLink>
         </li>
         <li class="col">
-          <RouterLink @click="store.windowScroll()" to="/esperienze">Esperienze</RouterLink>
-        </li>
-        <li class="col">
           <RouterLink @click="store.windowScroll()" to="/progetti">Progetti</RouterLink>
-        </li>
-        <li class="col">
-          <RouterLink @click="store.windowScroll()" to="/contatti">Contatti</RouterLink>
         </li>
       </ul>
     </nav>
@@ -57,13 +51,7 @@ export default {
           <RouterLink to="/sudime" @click="dropdown = false">Su di me</RouterLink>
         </li>
         <li @click="store.windowScroll()" class="col">
-          <RouterLink to="/esperienze" @click="dropdown = false">Esperienze</RouterLink>
-        </li>
-        <li @click="store.windowScroll()" class="col">
           <RouterLink to="/progetti" @click="dropdown = false">Progetti</RouterLink>
-        </li>
-        <li @click="store.windowScroll()" class="col">
-          <RouterLink to="/contatti" @click="dropdown = false">Contatti</RouterLink>
         </li>
       </ul>
   </div>
